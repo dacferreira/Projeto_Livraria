@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sistema de crud de Livros</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="images/icon.png" rel="shortcut icon" type="image/x-icon"/>
+
+  <link rel="stylesheet" href="lib/angular-material/angular-material.min.css">
+  <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body ng-app="myApp">
+  <!-- Nav -->
+ <div ng-include src="'views/_nav.html'"></div>	
+  <md-content class="md-padding">
+    <div layout="row" layout-align="center">
+       <div layout="column" flex-gt="66">
+          <div ng-view></div>
+      </div>
+    </div>
+  </md-content>
+</body>
+<!-- footer -->
+<div ng-include src="'views/_footer.html'"></div>
+
+<!-- lib -->
+<script src="lib/angular/angular.min.js"></script>
+<script src="lib/angular-route/angular-route.min.js"></script>
+<script src="lib/angular-material/angular-material.min.js"></script>
+<script src="lib/angular-animate/angular-animate.min.js"></script>
+<script src="lib/angular-aria/angular-aria.min.js"></script>
+<script src="lib/angular-messages/angular-messages.min.js"></script>
+<script src="lib/jquery/dist/jquery.min.js"></script>
+<script src="lib/underscore/underscore-min.js"></script>
+<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="lib/restangular/dist/restangular.js"></script>
+
+<!-- js -->
+<script src="js/app.js"></script>
+<script src="js/app-route.js"></script>
+<script src="js/rest-service-base.js"></script>
+
+<!-- Controllers -->
+<script src="js/nav-controller.js"></script>
+<script src="js/home-controller.js"></script>
+<script src="js/home-service.js"></script>
+
+<script src="js/livro/livro-route.js"></script>
+<script src="js/livro/livro-service.js"></script>
+<script src="js/livro/livro-list-controller.js"></script>
+<script src="js/livro/livro-include-edit-controller.js"></script>
+
+</html>

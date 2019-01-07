@@ -1,0 +1,23 @@
+# IDEs
+/.idea
+/.git
+
+# Generated content
+/_reports
+/_coverage
+/dist
+/target
+
+# Package management
+/node_modules
+/functions/node_modules
+/app/lib
+
+# Temp files
+/.tmp
+/.sass-cache
+
+# dophin
+/.directory
+
+

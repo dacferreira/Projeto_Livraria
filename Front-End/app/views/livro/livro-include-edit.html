@@ -1,0 +1,42 @@
+<h3 align="center">Incluir / Editar Livro</h3>
+<form name="livroForm" method="POST" enctype="multipart/form-data">
+    <md-content class="md-padding">
+        <div layout="row" layout-sm="column">
+            <md-input-container flex>
+                <label>ISBN</label>
+                <input type="text" id="isbn" ng-model="livro.ISBN" ng-disabled="isEdit"/>
+            </md-input-container>
+        </div>
+        <div layout="row" layout-sm="column">
+            <md-input-container flex>
+                <label>Autor</label>
+                <input type="text" id="isbn" ng-model="livro.Autor" ng-disabled="isEdit"/>
+            </md-input-container>
+        </div>
+        <div layout="row" layout-sm="column">
+            <md-input-container flex>
+                <label>Nome</label>
+                <input type="text" id="nome" ng-model="livro.Nome" ng-disabled="isEdit"/>
+            </md-input-container>
+        </div>
+        <div layout="row" layout-sm="column">
+            <md-input-container flex>
+                <label>Preço</label>
+                <input type="text" id="preco" ng-model="livro.Preco" />
+            </md-input-container>
+        </div>
+        <div layout="row" layout-sm="column">
+            <md-input-container flex>
+                <label>Data Publicação</label>
+                <input type="date" id="datapublicacao" ng-model="livro.DataPublicacao" ng-disabled="isEdit"/>
+            </md-input-container>
+        </div>
+        <div layout="row" layout-sm="column">
+            <input type="file" id="imagemCapa" accept="image/*" name="imagemCapa" ng-disabled="isEdit"/>
+            <button ng-click="add()" disabled="{{isEdit}}">Adicionar</button>
+        </div>
+        <div layout="row" layout-sm="column">
+            <md-button class="md-raised md-primary" ng-disabled="disableButton" ng-click="Create(livro)">Salvar</md-button>
+        </div>
+    </md-content>
+</form>
